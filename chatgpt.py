@@ -77,8 +77,8 @@ def handle_command(cmd):
         if len(history) < 2:
             print("→ Nothing to remove.")
         else:
-            history.pop()  # remove assistant's last reply
-            history.pop()  # remove user's last message
+            history.pop()
+            history.pop()
             print("→ Last exchange removed.")
 
     elif cmd == "/compact":
